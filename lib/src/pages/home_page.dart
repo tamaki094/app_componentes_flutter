@@ -37,6 +37,9 @@ class HomePage extends StatelessWidget {
   List<Widget> _listaItems(List<dynamic> data, BuildContext context) {
     final List<Widget> opciones = [];
     data.forEach((opt) {
+      // if (data == null) {
+      //   return [];
+      // }
       final widgetTmp = ListTile(
         title: Text(opt['texto']),
         leading: getIcon(opt['icon']),
